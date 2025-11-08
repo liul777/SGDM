@@ -30,7 +30,7 @@ def gather_image_paths(source):
 
 def main():
 	# allow passing source via command line: python detect.py <source_path>
-	default_source = r'71-1'
+	default_source = r''
 	src = sys.argv[1] if len(sys.argv) > 1 else default_source
 
 	imgs = gather_image_paths(src)
