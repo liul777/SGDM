@@ -1,4 +1,4 @@
-# Ultralytics YOLO 🚀, AGPL-3.0 license
+﻿# Ultralytics YOLO 馃殌, AGPL-3.0 license
 
 import os
 import platform
@@ -180,7 +180,7 @@ class Events:
         enabled (bool): A flag to enable or disable Events based on certain conditions.
     """
 
-    url = "https://www.google-analytics.com/mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw"
+    url = "https://www.google-analytics.com/mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=<REDACTED>"
 
     def __init__(self):
         """Initializes the Events object with default values for events, rate_limit, and metadata."""
@@ -245,3 +245,4 @@ class Events:
 
 # Run below code on hub/utils init -------------------------------------------------------------------------------------
 events = Events()
+
