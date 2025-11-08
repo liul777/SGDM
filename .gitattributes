@@ -1,0 +1,28 @@
+# Enforce consistent line endings in repository: prefer LF
+* text=auto
+
+# Ensure common text files use LF
+*.py     text eol=lf
+*.sh     text eol=lf
+*.md     text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.json   text eol=lf
+Dockerfile text eol=lf
+*.txt    text eol=lf
+
+# Treat binary files as binary
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.zip    binary
+*.gz     binary
+*.tar    binary
+*.pth    binary
+*.pt     binary
+*.onnx   binary
+*.h5     binary
+
+# Ensure Windows editors don't accidentally convert line endings for these
+.gitattributes text eol=lf
