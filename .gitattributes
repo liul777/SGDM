@@ -1,6 +1,5 @@
 # Enforce consistent line endings in repository: prefer LF
 * text=auto
-
 # Ensure common text files use LF
 *.py     text eol=lf
 *.sh     text eol=lf
@@ -10,19 +9,20 @@
 *.json   text eol=lf
 Dockerfile text eol=lf
 *.txt    text eol=lf
-
 # Treat binary files as binary
 *.png    binary
 *.jpg    binary
 *.jpeg   binary
 *.gif    binary
-*.zip    binary
+*.zip filter=lfs diff=lfs merge=lfs -text
 *.gz     binary
 *.tar    binary
-*.pth    binary
-*.pt     binary
-*.onnx   binary
-*.h5     binary
-
+*.pth filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.onnx filter=lfs diff=lfs merge=lfs -text
+*.h5 filter=lfs diff=lfs merge=lfs -text
 # Ensure Windows editors don't accidentally convert line endings for these
 .gitattributes text eol=lf
+*.pb filter=lfs diff=lfs merge=lfs -text
+*.tflite filter=lfs diff=lfs merge=lfs -text
+*.weights filter=lfs diff=lfs merge=lfs -text
